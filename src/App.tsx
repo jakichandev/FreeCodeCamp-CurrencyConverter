@@ -33,10 +33,25 @@ function App() {
     <ThemeProvider theme={theme}>
       <Main>
         <Fixed position="top-right">
-          <Switch style={{color: theme.colors.main}} onClick={() => theme === mainTheme ? setTheme(darkTheme) : setTheme(mainTheme)} />
+          <Switch
+            style={{ color: theme.colors.main }}
+            onClick={() =>
+              theme === mainTheme ? setTheme(darkTheme) : setTheme(mainTheme)
+            }
+          />
         </Fixed>
         <Fixed position="top-left">
-    <Paragraph $size="small" $weight="bold">FreeCodeCamp project - Front End Development Libraries Certification Project <br /> <a href="https://www.freecodecamp.org/learn/front-end-development-libraries-v9/lab-currency-converter/build-a-currency-converter">https://www.freecodecamp.org/learn/front-end-development-libraries-v9/lab-currency-converter/build-a-currency-converter</a></Paragraph>
+          <Paragraph $size="small" $weight="bold">
+            FreeCodeCamp project <br />
+            Front End Development Libraries Certification Project <br />{" "}
+            <a
+              target="_blank"
+              href="https://www.freecodecamp.org/learn/front-end-development-libraries-v9/lab-currency-converter/build-a-currency-converter"
+            >
+              https://www.freecodecamp.org/learn/front-end-development-libraries-v9/lab-currency-converter/build-a-currency-converter
+              <span style={{ marginLeft: "4px" }}>↗</span>
+            </a>
+          </Paragraph>
         </Fixed>
         <ConverterForm>
           <Title>
